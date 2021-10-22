@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disney+hotstar</title>
+  <link rel="icon" href="assets/icon.jfif" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Swiper css -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/ae685f10ec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- header  -->
+  <header class="header">
+    <!-- navbar -->
+    <nav class="navbar">
+      <button aria-label="menu" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <a title="The Walt Disney Company" href="index.html" class="brand-logo">
+        <img alt="Home page" src="assets/Disney+logo.png" />
+      </a>
+      <ul class="nav-sub active">
+        <li class="nav-menu">
+          <button class="nav-link" id="home-link">
+            <span>Home</span>
+          </button>
+        </li>
+        <li class="nav-menu">
+          <button class="nav-link" id="tv-link">
+            <span>Tv</span>
+          </button>
+        </li>
+        <li class="nav-menu">
+          <button class="nav-link" id="movies-link">
+            <span>Movies</span>
+          </button>
+        </li>
+        <li class="nav-menu">
+          <button class="nav-link" id="sports-link">
+            <span>Sports</span>
+          </button>
+        </li>
+        <li class="nav-menu nav-hid">
+          <div class="search-container">
+            <input type="search" placeholder="search" name="search" class="search-box" id="search-bar" autocomplete="off"/>
+            <label for="search-bar"><span class="search-icon"><i class="fas fa-search"></i></span></label>
+          </div>
+        </li>
+        <li class="nav-menu nav-hid">
+          <a href="https://www.hotstar.com/in/subscribe/get-started" class="sub-btn" >subscribe</a>
+        </li>
+        <li class="nav-menu nav-hid">
+          <a href="https://www.hotstar.com/in/subscribe/sign-in" class="login-link">login</a>
+        </li>
+      </ul>
+      <div class="search-container nav-show">
+        <input type="search" placeholder="search" name="search" class="search-box" id="search-item" autocomplete="off"/>
+        <label for="search-item"><span class="search-icon"><i class="fas fa-search"></i></span></label>
+      </div>
+      
+        <a href="https://www.hotstar.com/in/subscribe/get-started" class="sub-btn nav-show" >subscribe</a>
+      <a href="https://www.hotstar.com/in/subscribe/sign-in" class="login-link nav-show">login</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Main carousel -->
+    <section class="swiper mySwiper carousel-container">
+      <div class="swiper-wrapper carousel"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+
+    <!-- latest container -->
+
+    <section class="latest-section">
+      <h2 class="latest-header sliding-content">Latest movies and shows</h2>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper latest-container sliding-content"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- popular container -->
+    <section class="popular-section">
+      <h2 class="popular-header sliding-content">Popular movies and shows</h2>
+      <div class="swiper mySwiper3">
+        <div class="swiper-wrapper popular-container sliding-content"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__left">
+      <ul class="footer__content">
+        <li class="footer__content__item"><a href="https://www.hotstar.com/in/about-us">About us</a></li>
+        <li class="footer__content__item"><a href="https://www.hotstar.com/in/terms-of-use">Terms of use</a></li>
+        <li class="footer__content__item"><a href="https://www.hotstar.com/in/privacy-policy">privacy policy</a></li>
+      </ul>
+      <p class="copyright">&copy; 2021 STAR. All Rights Reserved. HBO, Home Box Office and all
+        related channel and programming logos are service marks of, and all
+        related programming visuals and elements are the property of, Home Box
+        Office, Inc. All rights reserved.
+      </p>
+    </div>
+    <div class="footer__middle">
+      <p class="social-icon-text">Connect with us</p>
+      <div>
+        <a href="https://www.facebook.com/DisneyPlusHotstar" aria-label="connect with us on facebook">
+          <span class="social-icon">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </span>
+        </a>
+        <a href="https://twitter.com/DisneyPlusHS" aria-label="connect with us on twitter">
+          <span class="social-icon">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="footer__right">
+      <p class="app-icon-text">Disney+ Hostar App</p>
+      <a href="https://play.google.com/store/apps/details?id=in.startv.hotstar">
+        <img src="./assets/Play store Icons.svg" alt="play store icon" class="app-icons" />
+      </a>
+    </div>
+  </footer>
+  <!-- Home Js -->
+  <script src="js/script.js"></script>
+  <!-- Swiper Js -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      clickable: true,
+      autoplay: {
+        delay: 3000,
+      },
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      slidesPerView: 8,
+      spaceBetween: 10,
+      clickable: true,
+      breakpoints: {
+        260: {
+          slidesPerView: 3,
+        },
+        625: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 6,
+        },
+        1174: {
+          slidesPerView: 8,
+        },
+      },
+    });
+    var swiper3 = new Swiper(".mySwiper3", {
+      loop: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      slidesPerView: 8,
+      spaceBetween: 10,
+      clickable: true,
+      breakpoints: {
+        260: {
+          slidesPerView: 3,
+        },
+        625: {
+          slidesPerView: 4,
+        },
+        768: {
+          slidesPerView: 6,
+        },
+        1174: {
+          slidesPerView: 8,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
